@@ -1,0 +1,79 @@
+/*CSS Reset*/
+html, body, div, span, applet, object, iframe, table, caption, tbody, tfoot, thead, tr, th, td, 
+del, dfn, em, font, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, 
+h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, 
+dl, dt, dd, ol, ul, li, fieldset, form, label, legend {
+	vertical-align: baseline;
+	font-family: inherit;
+	font-weight: inherit;
+	font-style: inherit;
+	font-size: 100%;
+	outline: 0;
+	padding: 0;
+	margin: 0;
+	}
+/* remember to define focus styles! */
+:focus {
+	outline: 0;
+	}
+
+ol, ul {
+	list-style: none;
+	}
+/* tables still need cellspacing="0" in the markup */
+table {
+	border-collapse: separate;
+	border-spacing: 0;
+	}
+caption, th, td {
+	font-weight: normal;
+	text-align: left;
+	}
+/* remove possible quote marks (") from <q> & <blockquote> */
+blockquote:before, blockquote:after, q:before, q:after {
+	content: "";
+	}
+blockquote, q {
+	quotes: "" "";
+	}
+
+    *{
+        box-sizing:border-box; /*Respect the width of the box, apply padding or border within the width it's been given not in addition to it*/
+        max-width:100%; /*Makes it so that elements can never be bigger than their parent, stops horizontal scroll bar*/
+        padding:0;
+        margin:0;
+        border:1px solid grey;
+    }
+    /*General Styles*/
+    html{
+        font-size:62.5%; /*Default browser font-size is 16px, this makes it so that 1rem === 10px (easier math) also gives the user control over bumping up or down the font size because % is a scaleable unit of measurement*/
+    }
+    body{
+        font-size:1.8rem;  /*setting font size back to 16px*/
+        line-height:1.5;
+        color:#4f4f4f;
+        background-color:#FBFFFB;
+        font-family: 'Source Sans Pro', sans-serif;
+    }
+    a{
+        font-family: 'Source Sans Pro', sans-serif;
+        text-decoration:none;
+        color:#266035;
+    }
+    h1,h2,h3{
+        font-family: 'Oxygen', sans-serif;
+        color:#266035;
+    }
+    h1{
+        color:#FBFFFB;
+        font-size:5rem;
+    }
+    h2{
+        font-size:3.5rem;
+    }
+    h3{
+        font-size:2.5rem;
+    }
+    button{
+        background-color:#266035;
+    }
